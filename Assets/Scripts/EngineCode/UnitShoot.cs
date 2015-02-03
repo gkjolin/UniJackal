@@ -18,7 +18,7 @@ public class UnitShoot : MonoBehaviour {
 		{
 			if (timeCnt <= 0.0f)
 			{
-				EngineDelegate.instance.CreateProjectile("Rocket", transform.position, transform.rotation);
+				EngineDelegate.instance.CreateProjectile("Rocket_Red", transform.position, transform.rotation);
 				timeCnt = shootCoolDown;
 			}
 		}

@@ -21,13 +21,18 @@ public class Projectile : MonoBehaviour {
 	{
 
 	}
-
+	
+	public void Die()
+	{
+		dead = true;
+	}
 	// Update is called once per frame
 	void Update () {
 		if (motor != null)
 			motor.OnUpdate (Time.deltaTime);
 		if (dead) 
 		{
+			OnDie();
 			Destroy (this.gameObject);
 			return;
 		}
@@ -38,9 +43,8 @@ public class Projectile : MonoBehaviour {
 				life.OnUpdate(Time.deltaTime);
 				if (life.ShouldDie())
 				{
-					OnDie();
 					dead = true;
-					return;
+					break;
 				}
 			}
 		}

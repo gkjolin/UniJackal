@@ -22,7 +22,6 @@ public class EngineDelegate : MonoBehaviour {
 	public GameObject CreateUnit(string name, Vector3 position, Quaternion rotation)
 	{
 		string loadPath = UNIT_PATH + name;
-		Debug.Log (loadPath);
 		GameObject pref = Resources.Load<GameObject> (loadPath);
 		if (pref == null) 
 		{
@@ -39,7 +38,6 @@ public class EngineDelegate : MonoBehaviour {
 	public GameObject CreateProjectile(string name, Vector3 position, Quaternion rotation)
 	{
 		string loadPath = PROJECTILE_PATH + name;
-		Debug.Log (loadPath);
 		GameObject pref = Resources.Load<GameObject> (loadPath);
 		if (pref == null) 
 		{
@@ -53,7 +51,6 @@ public class EngineDelegate : MonoBehaviour {
 	public GameObject CreateEffect(string name, Vector3 position, Quaternion rotation)
 	{
 		string loadPath = EFFECT_PATH + name;
-		Debug.Log (loadPath);
 		GameObject pref = Resources.Load<GameObject> (loadPath);
 		if (pref == null) 
 		{

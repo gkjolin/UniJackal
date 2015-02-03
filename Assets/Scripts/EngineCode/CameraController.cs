@@ -15,6 +15,7 @@ public class CameraController : MonoBehaviour {
 		if (targetObject != null)
 		{
 			transform.position = targetObject.transform.position + offset;
+			transform.LookAt(targetObject.transform.position);
 		}
 	}
 }
