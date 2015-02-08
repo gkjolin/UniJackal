@@ -6,6 +6,6 @@ public class ProjectileOnDie : MonoBehaviour {
 
 	public virtual void DieAction()
 	{
-		EngineDelegate.instance.CreateEffect ("Explode", transform.position, Quaternion.identity);
+		EngineDelegate.instance.CreateEffect (effectName, transform.position, Quaternion.identity);
 	}
 }

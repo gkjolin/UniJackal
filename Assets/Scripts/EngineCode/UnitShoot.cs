@@ -22,5 +22,10 @@ public class UnitShoot : MonoBehaviour {
 				timeCnt = shootCoolDown;
 			}
 		}
+		
+		if (Input.GetKeyDown (KeyCode.K))
+		{
+			EngineDelegate.instance.CreateProjectile("Bullet", transform.position, Quaternion.identity);
+		}
 	}
 }
