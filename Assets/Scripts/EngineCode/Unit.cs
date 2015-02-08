@@ -23,4 +23,14 @@ public class Unit : MonoBehaviour {
 	{
 
 	}
+	
+	public void Die()
+	{
+		OnDie();
+	}
+	
+	protected virtual void OnDie()
+	{
+		Destroy(this.gameObject);
+	}
 }

@@ -55,6 +55,8 @@
      <Compile Include="Assets\Scripts\EngineCode\ProjectileMotor.cs" />
      <Compile Include="Assets\Scripts\EngineCode\ProjectileOnDie.cs" />
      <Compile Include="Assets\Scripts\EngineCode\TLProjectileDie.cs" />
+     <Compile Include="Assets\Scripts\EngineCode\TLProjectileTrigger.cs" />
+     <Compile Include="Assets\Scripts\EngineCode\TLUnitTrigger.cs" />
      <Compile Include="Assets\Scripts\EngineCode\Test\EngineDelegateTest.cs" />
      <Compile Include="Assets\Scripts\EngineCode\TriggerDriver.cs" />
      <Compile Include="Assets\Scripts\EngineCode\TriggerListener.cs" />

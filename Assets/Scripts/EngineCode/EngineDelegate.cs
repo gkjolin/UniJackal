@@ -60,6 +60,16 @@ public class EngineDelegate : MonoBehaviour {
 		GameObject inst = (GameObject)GameObject.Instantiate (pref, position, rotation);
 		return inst;
 	}
+	
+	public void UnitTriggered(Unit unit, Collider other)
+	{
+		Debug.Log ("Unit Triggered + " + unit.gameObject.ToString() + " : " + other.gameObject.ToString());
+	}
+	
+	public void ProjectileTriggered(Projectile proj, Collider other)
+	{
+		Debug.Log ("Projectile Triggered + " + proj.gameObject.ToString() + " : " + other.gameObject.ToString());
+	}
 
 	public void Send(object msg)
 	{
